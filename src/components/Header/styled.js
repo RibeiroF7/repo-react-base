@@ -1,16 +1,38 @@
 import styled from "styled-components";
 import { primaryColor } from "../../config/colors";
 
-export const Nav = styled.nav `
+export const Nav = styled.nav`
   background: ${primaryColor};
-  padding:20px;
+  padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: #fff;
 
   a {
     color: #fff;
-    margin: 0 10px 0 0;
-    font-weight:bold;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  svg {
+    display: block;
+  }
+`;
+
+export const Status = styled.div`
+  margin-left: auto;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+
+  .success {
+    color: #4ade80; /* verde */
+  }
+  .idle {
+    color: #f1f5f9; /* neutro claro */
   }
 `;
